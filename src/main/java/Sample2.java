@@ -1,14 +1,13 @@
+package main.java;
+import static java.util.stream.Collectors.toList;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-import static java.util.stream.Collectors.*;
 
-/**
- * Created by qiuzhanghua on 2017/2/7.
- */
 public class Sample2 {
   public static void main(String[] args) {
 

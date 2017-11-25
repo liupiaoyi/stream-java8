@@ -1,18 +1,20 @@
+package main.java;
+
 import java.util.function.Supplier;
 
-/**
- * Created by qiuzhanghua on 2017/2/7.
- */
 public class FibonacciSupplier implements Supplier<Long> {
-  private long previous = 1;
-  private long current = 2;
+  private long longBef = 1;
+  private long before = 2;
+  private long now = 4;
 
   @Override
   public Long get() {
-    long p = previous;
-    long next = current + previous;
-    previous = current;
-    current = next;
-    return p;
+    long n = now;
+    long next = now + before + longBef;
+    longBef = before;
+    before = now;
+    now = next;
+    return n;
   }
+  
 }
